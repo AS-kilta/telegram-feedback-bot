@@ -1,0 +1,10 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - "dockerize"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
