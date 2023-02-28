@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build project docker image
-        uses: docker/build-push-action@v4
+        uses: AS-kilta/telegram-feedback-bot
         with:
           context: .
           file: ./Dockerfile
