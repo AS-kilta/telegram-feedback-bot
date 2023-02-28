@@ -9,5 +9,4 @@ jobs:
     steps:
       - name: Build project docker image
         run: |
-          docker compose build
-
+          docker compose build docker-compose.yml
