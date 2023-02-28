@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-        uses: Whree
+        uses: owner/repo@ref
         with:
           context: .
           file: ./Dockerfile
