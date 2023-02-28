@@ -8,8 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build project docker image
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          file: ./Dockerfile
-          push: false
+        run: |
+          docker compose build
