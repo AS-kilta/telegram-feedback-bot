@@ -9,10 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      -
-      name: Build
-      uses: Whree
-      with:
-        context: .
-        file: ./Dockerfile
-        push: false
+      - name: Build
+        uses: Whree
+        with:
+          context: .
+          file: ./Dockerfile
+          push: false
