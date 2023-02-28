@@ -16,14 +16,18 @@ and be able to send messages.
 """
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from dotenv import load_dotenv
+from os import getenv
 import logging
 
+load_dotenv()
+
 #Change this to your bot's token given by Telegrams Botfather.
-BOT_TOKEN = ""
+BOT_TOKEN = getenv("BOT_TOKEN")
 
 #Change this to your chat where you want you messages to be forwarded.
 #To figure out the id, use for example the /whoami command of this bot in the chat.
-CHAT_ID = 0
+CHAT_ID = int(getenv("CHAT_ID"))
 
 #Sent messages are saved here to enable replying.
 sent_messages = {}
@@ -124,5 +128,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
