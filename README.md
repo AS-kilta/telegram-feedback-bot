@@ -15,6 +15,27 @@ The way it works is that a private message sent to the bot is anonymously forwar
 ## Setup docker to your computer or server
 [Setup docker](https://docs.docker.com/get-started/)
 
+## Clone repo
+```
+git clone https://github.com/ari-viitala/telegram-messaging-bot.git
+cd telegram-messaging-bot
+```
+## Credentials
+In `docker-compose.yml` set `BOT_TOKEN` to your bots token which you got from BotFather.
+
+Then run your docker with `docker compose up` and send to bot message `/whoami`. Now you got your `CHAT_ID`. Close bot by pressing `ctrl-c`.
+
+In `docker-compose.yml` set `CHAT_ID` to your chat id.
+
+Now you can run your bot on server with:
+```
+docker compose up
+```
+Or if you want to set it to run in the background
+```
+docker compose up -d
+```
+
 ## Build docker image
 ```
 docker compose up
