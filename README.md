@@ -29,14 +29,23 @@ In `docker-compose.yml` set `CHAT_ID` to your chat id.
 
 Now you can run your bot on server with:
 ```
-docker compose up
+docker compose build && docker compose up
 ```
 Or if you want to set it to run in the background
 ```
-docker compose up -d
+docker compose build && docker compose up -d
 ```
 
 ## Build docker image
+```
+docker compose build
+```
+Or if you want to set it to run in the background
+```
+docker compose build
+```
+
+## Run docker image
 ```
 docker compose up
 ```
