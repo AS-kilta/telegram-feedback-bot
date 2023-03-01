@@ -2,6 +2,6 @@ version: "1.0"
 services:
   app:
     environment:
-      - BOT_TOKEN=
-      - CHAT_ID=
+      - BOT_TOKEN=0
+      - CHAT_ID=0
     build: .
