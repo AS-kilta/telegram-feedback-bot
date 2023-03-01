@@ -24,6 +24,7 @@ Or if you want to set it to run in the background
 docker compose up -d
 ```
 
+# Develop
 ## Clone repo and install libraries
 ```
 git clone https://github.com/ari-viitala/telegram-messaging-bot.git
@@ -33,8 +34,6 @@ virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-
-## Develop
 
 Using a text editor in `telegram-messaging-bot.py` add the bot token you received from BotFather as the `BOT_TOKEN` variable.
 
