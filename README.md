@@ -17,7 +17,7 @@ The way it works is that a private message sent to the bot is anonymously forwar
 
 ## Clone repo
 ```
-git clone https://github.com/ari-viitala/telegram-messaging-bot.git
+git clone https://github.com/AS-kilta/telegram-feedback-bot
 cd telegram-messaging-bot
 ```
 ## Credentials
@@ -48,7 +48,7 @@ docker compose up -d
 # Develop
 ## Clone repo and install libraries
 ```
-git clone https://github.com/ari-viitala/telegram-messaging-bot.git
+git clone https://github.com/AS-kilta/telegram-feedback-bot
 cd telegram-messaging-bot
 
 pip install -r requirements.txt
