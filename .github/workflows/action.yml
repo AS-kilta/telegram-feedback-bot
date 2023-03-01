@@ -1,12 +1,15 @@
-name: Greeting from Akseli
+name: telegram feedback bot
 
-on: push
+on: [push]
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Build project docker image
-        run: |
-          docker compose build
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: telegramFeedbackBot:latest
