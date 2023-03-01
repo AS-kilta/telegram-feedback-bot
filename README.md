@@ -51,12 +51,14 @@ docker compose up -d
 git clone https://github.com/ari-viitala/telegram-messaging-bot.git
 cd telegram-messaging-bot
 
-virtualenv venv
-source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Using a text editor in `telegram-messaging-bot.py` add the bot token you received from BotFather as the `BOT_TOKEN` variable.
+Set enviroment variables to your `BOT_TOKEN` and `CHAT_ID`
+```
+export BOT_TOKEN=<bot token>
+export CHAT_ID=<chat id>
+```
 
 Start the bot.
 ```
