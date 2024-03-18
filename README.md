@@ -54,7 +54,7 @@ Or if you want to set it to run in the background
 docker compose up -d
 ```
 
-# Develop
+# Develop without docker
 ## Clone repo and install libraries
 ```
 git clone https://github.com/AS-kilta/telegram-feedback-bot
